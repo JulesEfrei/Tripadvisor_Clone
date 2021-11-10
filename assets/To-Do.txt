@@ -1,0 +1,36 @@
+// HEADER / NAVBAR //
+
+    - Sticky position on main nav section
+    - Input bar in header
+    - Hover on header content
+    - Hover on main nav content
+    - Cursor
+    - Focus Effect on More button
+
+// MAIN //
+
+    - Hover on image
+    - Replace "See all images" and Hover
+    
+    / Carousel Section /
+
+        - Make Carousel (Using Bootstrap)
+        - Hover effect on image
+        - Add heart icon
+        - Cursor
+        - SVG 2021 on image
+
+    / Dig section /
+
+        - Hover on image
+        - Add heart on image
+
+// Footer //
+
+    - Option menu
+
+// Global //
+
+    - Font Familly
+    - Add new section (3 sections)
+    - Focus Effects

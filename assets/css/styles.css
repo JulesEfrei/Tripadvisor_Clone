@@ -389,15 +389,15 @@ header > section > nav > div, button {
 }
 
 #dig-into-image-01 {
-    background-image: url('../img/morioh/dig_into_01.png')
+    background-image: url('../img/dig_0.jpg')
 }
 
 #dig-into-image-02 {
-    background-image: url('../img/morioh/dig_into_02.png')
+    background-image: url('../img/dig_01.jpg')
 }
 
 #dig-into-image-03 {
-    background-image: url('../img/morioh/dig_into_03.png')
+    background-image: url('../img/dig_02.jpg')
 }
 
 .dig-into-link {
