@@ -9,16 +9,16 @@
 
 // MAIN //
 
-    - Hover on image
-    - Replace "See all images" and Hover
+    - Hover on image V
+    - Replace "See all images" and Hover V
     
     / Carousel Section /
 
         - Make Carousel (Using Bootstrap)
-        - Hover effect on image
-        - Add heart icon
-        - Cursor
-        - SVG 2021 on image
+        - Hover effect on image V
+        - Add heart icon V
+        - Cursor V
+        - SVG 2021 on image V
 
     / Dig section /
 

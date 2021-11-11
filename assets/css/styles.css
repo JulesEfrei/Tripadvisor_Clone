@@ -6,10 +6,17 @@
 
 * {
     text-decoration: none;
+    box-sizing: border-box;
 }
 
 body {
     font-family: "Trip Sans Med"; 
+    /* max-width: 1188px; */
+}
+
+.img:hover, .hearth:hover + .img {
+    opacity: .8;
+    transition: opacity .2s ease;
 }
 
 aside {
@@ -178,9 +185,9 @@ header > section > nav > div, button {
 }
 
 #all-images-button {
-    position:absolute;
-    bottom: 35px;
-    left: 150px;
+    position: relative;
+    bottom: 50px;
+    left: 15px;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -194,6 +201,11 @@ header > section > nav > div, button {
 
 #all-images-button p {
     margin-left:3px;
+}
+
+#all-images-button:hover {
+    background-color: #333333;
+    cursor: pointer;
 }
 
 /* ******************************** */
@@ -314,6 +326,10 @@ header > section > nav > div, button {
     display:flex;
 }
 
+.essential div:hover {
+    cursor: pointer;
+}
+
 .essential-reviews, .essential-reviews-number, .essential h5 {
     margin: 2px 0px;
 }
@@ -322,6 +338,7 @@ header > section > nav > div, button {
 /* .essential-container .essential > div:last-child {margin-right:0px}*/
 .essential-container .essential > div:not(:last-child) {
     margin-right:15px;
+    width: 270px;
 }
 
 .essential img {
@@ -330,6 +347,40 @@ header > section > nav > div, button {
     margin-bottom:8px;
     object-fit:cover; /* crop the image to fill the box (no stretching nor change of the size) */
     cursor:pointer;
+}
+
+.hearth {
+    width: 35px;
+    height: 35px;
+    display: block;
+    z-index: 1000;
+    position: absolute;
+    fill: black;
+    padding: 5px;
+    background-color: white;
+    border-radius: 50%;
+    margin-top: 5px;
+    margin-left: calc(270px - 5px);
+    transform: translateX(-100%);
+}
+
+.hearth:hover {
+    opacity: 1;
+    background-color: #ececec;
+    transition: background-color .2s ease;
+}
+
+.certif {
+    width: 40px;
+    height: 40px;
+    z-index: 1000;
+    position: absolute;
+    padding: 5px;
+    background-color: #34E0A1;
+    border-radius: 50%;
+    margin-top: calc(205px - 5px);
+    margin-left: calc(-270px + 5px);
+    transform: translateY(-100%);
 }
 
 .essential-icon {
