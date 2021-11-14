@@ -1,0 +1,284 @@
+@media (max-width: 1200px) { 
+    
+    body, html {
+        margin: 0;
+        max-width: 100vw;   
+        overflow-x: hidden !important;
+    }
+    
+    * {
+        max-width: 100%;
+    }
+
+    .input {
+        width: 15rem;
+    }
+
+    #sign-in {
+        width: 6rem;
+    }
+
+    .hearth_dig {
+        left: calc(232px / 2 - 5px);
+    }
+
+    .travel-advice div img {
+        width: 48px;
+        height: 40px;
+    }
+
+    .hearth {
+        margin-left: 191px;
+    }
+
+    .certif {
+        margin-left: -191px; 
+    }
+
+    .input a {
+        font-size: 10px;
+        color: black;
+    }
+
+ }
+
+@media (max-width: 950px) { 
+
+
+
+    header section div a {
+        display: none;
+    }
+
+    .input a {
+        display: block;
+    }
+    #sign-in {
+        width: 6rem;
+    }
+
+    section {
+        margin: 10px 20px;
+        width: auto;
+    }
+
+    .main-navigation-sticky div:nth-child(3), .main-navigation-sticky div:nth-child(4){
+        display: none;
+    }
+
+    .description {
+        width: auto;
+    }
+
+    .travel-advice {
+        flex-wrap: wrap;
+    }
+
+    .travel-advice div {
+        flex: 45%;
+        margin-right: 0;
+        padding: 10px 0;
+    }
+
+    .travel-advice div:not(:nth-child(3)), .travel-advice div:not(:nth-child(4)) {
+        margin-bottom: 1rem;
+    }
+
+    .travel-advice div:nth-child(1), .travel-advice div:nth-child(3) {
+        margin-right: 10px;
+    }
+
+    .essential div:nth-child(3) {
+        display: none;
+    }
+
+    .hearth {
+        margin-left: calc(250px - 5px);
+    }
+
+    .certif {
+        margin-left: calc(-250px + 5px);
+    }
+
+    .great-for div:not(:nth-child(4)) {
+        width: 250px;
+    }
+
+    .great-for * {
+        max-width: 100vw;
+    }
+
+    .great-for {
+        overflow-x: auto;
+    }
+
+    .great-for .hearth {
+        display: none;
+    }
+
+    footer .footer-container{
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: center;
+        width: 90%;
+    }
+
+    footer {
+        height: auto;
+    }
+
+    #currency-and-country{
+        width: 100%;
+        justify-content: space-between;
+        margin: 2rem 0;
+    }
+
+    #currency-and-country select {
+        flex: 1;
+    }
+
+    footer select:nth-child(1) {
+        margin-left: 0;
+    }
+
+}
+
+@media (max-width: 550px) { 
+
+    * {
+        max-width: none !important;
+    }
+
+    .input input, #sign-in {
+        display: none;
+    }
+
+    .essential div:nth-child(3) {
+        display: block;
+    }
+
+    .input {
+        border: none;
+        margin: 0;
+        width: auto;
+    }
+
+    .input a {
+        display: block;
+        font-size: 25px;
+    }
+
+    header nav div {
+        display: none;
+    }
+
+    .left_nav {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    #tripadvisor {
+        width: 150px !important;
+    }
+
+    .hamburger {
+        display: block;
+        font-size: 25px;
+    }
+
+    main section h1 {
+        margin: 30px auto;
+        font-size: 30px;
+    }
+
+    .main-navigation, .main-navigation-sticky {
+        flex-wrap: nowrap;
+        max-width: 100vw;
+        overflow-x: auto;
+    }
+
+    .main-navigation div p {
+        margin: 0;
+    }
+
+    #sticky-navigation h1 {
+        display: none;
+    }
+
+    #sticky-navigation {
+        margin: 0;
+        width: 100%;
+    }
+
+    .main-navigation-sticky {
+        width: 100%;
+        justify-content: space-between;
+        margin-left: 1rem;
+    }
+
+    main-navigation-sticky div:nth-child(3), .main-navigation-sticky div:nth-child(4){
+        display: flex;
+    }
+
+    .images div:last-child {
+        display: none;
+    }
+
+    .images div:first-child {
+        width: 100%;
+        margin: 0;
+    }
+
+    .images {
+        width: 100%;
+        display: block;
+        margin-left: 0;
+    }
+
+    .sub-navigation {
+        display: none;
+    }
+
+    .essential-container {
+        flex-direction: column;
+    }
+
+    .essential-container div:first-child {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .essential {
+        width: 100% !important;
+        overflow-x: auto;
+    }
+
+    .essential div {
+        width: 270px !important;
+    }
+
+    .hearth, .certif, .hearth_dig {
+        display: none;
+    }
+
+    .comments-list {
+        display: block;
+    }
+
+    .comments-item {
+        margin-right: 0;
+        padding: 10px;
+        margin-bottom: 1rem;
+    }
+
+    .dig-into-container {
+        width: 800px;
+        overflow-x: auto;
+    }
+
+    .dig-into-cell {
+        width: 270px !important;
+        min-width: min-content;
+    }
+
+}

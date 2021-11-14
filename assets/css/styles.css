@@ -10,8 +10,24 @@
 }
 
 body {
-    font-family: "Trip Sans Med"; 
+    font-family: "Trip Sans Med";
+    margin: 0;
     /* max-width: 1188px; */
+}
+
+header a, h1, .main-navigation p, .description h2, .travel-advice p{
+    font-family: "Code reg";
+    letter-spacing: 2px;
+}
+
+.flex p a, .sub-navigation p, .subtitle {
+    font-family: "Code light";
+    font-weight: lighter;
+    letter-spacing: 1px;
+}
+
+.description p, .text_description {
+    font-family: "paragraphe";
 }
 
 .img:hover, .hearth:hover + .img {
@@ -40,12 +56,13 @@ h2 {
 
 h4 {
     font-size:24px;
-    font-family: "Trip Sans Reg"; 
+    font-family: "Code reg";
+    letter-spacing: 2px;
+    font-weight: 500;
 }
 
 h5 {
-    font-size:18px;
-    font-family: "Trip Sans Reg"; 
+    font-size:18px; 
 }
 
 h5:hover {
@@ -68,6 +85,10 @@ img {
     width: 40px;
 }
 
+.hamburger {
+    display: none;
+}
+
 
 /* ******************************** */
 /* global space */
@@ -77,9 +98,22 @@ img {
     margin-top:68px;
 }
 
+.section-spacing h2, .section-spacing h4 {
+    font-family: "Code light";
+    font-weight: lighter;
+}
+
+.section-spacing h5 {
+    margin: 10px 0;
+}
+
 /* ******************************** */
 /* header */
 /* ******************************** */
+
+header {
+    margin-top: 10px;
+}
 
 /* header => path to section */
 header > section {
@@ -96,6 +130,12 @@ header > section > nav {
 header nav div {
     display: flex;
     align-items: center; /* vertical */
+    padding: 0 7.5px;
+    border-radius: 50px;
+}
+
+header nav div:hover {
+    background-color: #EDEDED;
 }
 
 header a {
@@ -118,12 +158,38 @@ header > section > nav > div, button {
     margin-left:15px;
 }
 
+.left_nav {
+    display: flex;
+    align-items: center;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    width: 20rem;
+    height: 2.5rem;
+    border: 2px solid #E0E0E0;
+    border-radius: 50px;
+    margin-left: 2rem;
+    padding: 5px;
+}
+
+.input input {
+    width: 90%;
+    height: 90%;
+    border: none;
+    background: transparent;
+    outline: transparent;
+    margin-left: 5px;
+}
+
+
 /* ******************************** */
 /* main: h1 explore */
 /* ******************************** */
 
 #explore {
-  color: rgb(158, 23, 158);
+  color: #FF5D5D;
 }
 
 /* ******************************** */
@@ -149,6 +215,54 @@ header > section > nav > div, button {
     margin-bottom: 10px;
 }
 
+.main-navigation div:hover, .main-navigation-sticky div:hover {
+    color: white;
+    background-color: black;
+    fill: white;
+    cursor: pointer;
+}
+
+.sticky {
+    display: flex !important;
+    z-index: 1000;
+}
+
+#sticky-navigation {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-top: 0px !important;
+    padding-top: 10px;
+    background-color: white;
+    display: none;
+    justify-content: space-around;
+}
+
+.main-navigation-sticky {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 2rem;
+    width: 60%;
+}
+
+#sticky-navigation h1 {
+    font-size: 1rem;
+}
+
+.main-navigation-sticky div {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 10%; /* minimal width */
+    height: 4rem;
+    border: 1px solid #000; /* border-width; 1px; border-style: solid; border-color: #000; */
+    border-radius: 10px;
+    box-sizing: border-box; /* same size */
+    padding: 0.2px 16px;
+    margin-right: 8px;
+    margin-bottom: 10px;
+}
 /* ******************************** */
 /* main: images */
 /* ******************************** */
@@ -201,6 +315,7 @@ header > section > nav > div, button {
 
 #all-images-button p {
     margin-left:3px;
+    font-size: "Code light";
 }
 
 #all-images-button:hover {
@@ -220,7 +335,6 @@ header > section > nav > div, button {
 .sub-navigation {
     display:flex;
     justify-content: space-between;
-    font-family: "Trip Sans Reg";
     color:#333;
     font-size:12px;
     margin-top: 5px;
@@ -316,7 +430,7 @@ header > section > nav > div, button {
     line-height:24px;
 }
 
-.essential-container a {
+.essential-container a, .title a {
     color:#333;
     font-size:16px;
     text-decoration: underline;
@@ -353,7 +467,7 @@ header > section > nav > div, button {
     width: 35px;
     height: 35px;
     display: block;
-    z-index: 1000;
+    z-index: 10;
     position: absolute;
     fill: black;
     padding: 5px;
@@ -364,16 +478,17 @@ header > section > nav > div, button {
     transform: translateX(-100%);
 }
 
-.hearth:hover {
+.hearth:hover, .hearth_dig:hover {
     opacity: 1;
     background-color: #ececec;
     transition: background-color .2s ease;
+    cursor: pointer;
 }
 
 .certif {
     width: 40px;
     height: 40px;
-    z-index: 1000;
+    z-index: 10;
     position: absolute;
     padding: 5px;
     background-color: #34E0A1;
@@ -459,6 +574,107 @@ header > section > nav > div, button {
     font-size:18px;
 }
 
+.dig-into-image:hover {
+    cursor: pointer;
+}
+
+.dig-into-link a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    color: #9C9D9C;
+}
+
+.hearth_dig {
+    position: relative;
+    top: 5px;
+    left: calc(366px / 2 - 5px);
+    transform: translateX(-50%);
+    padding: 5px;
+    background-color: white;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+}
+
+/* ******************************* */
+/* main : Comments /*
+/* ******************************* */
+
+.comments {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title h1 {
+    font-family: "Code reg";
+    font-style: 1rem;
+}
+
+.comments-list {
+    display: flex;
+    margin: 1.5rem 0;
+}
+
+.comments-item {
+    background-color: #FAF1ED;
+    width: auto;
+    padding: 20px;
+    border-radius: 15px;
+    margin-right: 2rem;
+}
+
+.comments-content {
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: "Code reg";
+    margin-bottom: 4rem !important;
+}
+
+
+.comments-content:hover {
+    cursor: pointer;
+}
+
+.comments h5, .comments h4 {
+    margin: 0;
+    font-family: "Code light";
+}
+
+.item-bottom {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.item-bottom img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: .5rem;
+}
+
+.item-bottom img:hover {
+    cursor: pointer;
+}
+
+.item-bottom h5 {
+    font-weight: lighter;
+}
+
+.item-bottom h5 span {
+    font-weight: bold;
+}
+
+.item-bottom h5 span:hover {
+    cursor: pointer;
+}
 
 /* ******************************** */
 /* main: dig into */
@@ -541,6 +757,10 @@ footer select {
     height: 35px;
     font-size: 15px;
     padding: 0px 10px;
+}
+
+footer select:nth-child(1) {
+    margin: 0 1rem;
 }
 
 #currency-and-country {

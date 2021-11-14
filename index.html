@@ -27,7 +27,12 @@
 
     <!-- path to fonts file -->
     <link href="/assets/css/font.css" rel="stylesheet">
-    
+
+    <!-- Link responsive css-->
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+
+    <!-- Link FontAwesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     
   </head>
   
@@ -40,10 +45,15 @@
       
       <section>
         
-        <div>
-          <img src="assets/img/tripadvisor_logo.svg" alt="tripadvisor" id="tripadvisor"/>
+        <div class="left_nav">
+          <a href="#" class="hamburger"><i class="fas fa-bars"></i></a>
+          <img src="assets/img/tripadvisor_logo.svg" alt="tripadvisor" id="tripadvisor"/>       
+          <div class="input">
+            <a href="#"><i class="fas fa-search"></i></a>
+            <input type="text" name="search" id="search">
+          </div>
         </div>
-        
+
         <nav>
           
           <div>
@@ -106,6 +116,35 @@
         <div>
           <p>Hire a Trip Designer</p>
           <svg viewBox="0 0 24 24" width="24px" height="24px"><path d="M8 9.5c1.792 0 3.25-1.458 3.25-3.25S9.792 3 8 3 4.75 4.458 4.75 6.25 6.208 9.5 8 9.5zm0-4.501A1.252 1.252 0 018 7.5a1.252 1.252 0 010-2.501zM16.004 11.499c1.792 0 3.25-1.458 3.25-3.25S17.796 5 16.004 5s-3.25 1.458-3.25 3.25 1.458 3.249 3.25 3.249zm0-4.499c.689 0 1.25.561 1.25 1.25s-.561 1.25-1.25 1.25a1.25 1.25 0 010-2.5zM21.8 15.418c-1.389-1.855-3.498-2.919-5.789-2.919-.886 0-1.741.161-2.542.462-1.358-1.565-3.315-2.461-5.459-2.461-2.336 0-4.455 1.051-5.813 2.883L2 13.648V21h20v-5.316l-.2-.266zM4 19v-4.674C4.98 13.16 6.424 12.5 8.01 12.5c1.41 0 2.705.529 3.664 1.464a7.377 7.377 0 00-1.477 1.481l-.197.268V19H4zm16 0h-8v-2.613a5.188 5.188 0 014.011-1.887c1.55 0 2.985.676 3.989 1.865V19z"></path></svg>
+        </div>
+        <div>
+          <p>More</p>
+          <svg x="0" y="0" viewBox="0 0 24 24" width="24px" height="24px"><circle cx="4.5" cy="11.9" r="2.5"></circle><circle cx="19.5" cy="11.9" r="2.5"></circle><circle cx="12" cy="11.9" r="2.5"></circle></svg>
+        </div>
+      </nav>
+    </section>
+
+    <section id="sticky-navigation">
+      <h1><span id="explore">Explore</span><br> New York City</h1>
+    
+
+      <!-- main-navigation -->
+      <nav class="main-navigation-sticky">
+        <div>
+          <p>Travel Advice</p>
+          <svg viewBox="0 0 24 24" width="24px" height="24px"><path d="M21.523 6.006h-8.039v-2h-9V3a1 1 0 10-2 0l-.008 19h2v-4.979h7.009v2.001h10.039l-2.949-6.509 2.948-6.507zm-10.039 9.015H4.476V6.005h7.008v9.016zm6.938 2h-4.938V8.006h4.938l-2.043 4.508 2.043 4.507z"></path></svg>
+        </div>
+        <div>
+          <p>Hotels</p>
+          <svg viewBox="0 0 24 24" width="24px" height="24px"><path d="M20.587 12.139V4.144H3.424v7.986A3.805 3.805 0 002 15.097v4.755h1.906v-1.905h16.188v1.91H22v-4.76a3.804 3.804 0 00-1.413-2.958zm-1.906-6.09V8.83a5.048 5.048 0 00-2.865-.876c-1.565 0-2.952.69-3.816 1.749-.864-1.059-2.252-1.749-3.818-1.749-1.07 0-2.056.324-2.851.866V6.049h13.35zm-.258 5.248c-.077-.005-.155-.012-.234-.012h-4.971c.438-.838 1.437-1.426 2.598-1.426 1.168 0 2.173.593 2.607 1.438zm-7.643-.012H5.812c-.081 0-.159.007-.238.012.434-.844 1.438-1.438 2.606-1.438 1.163 0 2.163.588 2.6 1.426zM3.906 16.04v-.943c0-1.051.855-1.905 1.906-1.905h12.376c1.051 0 1.905.854 1.905 1.905v.943H3.906z"></path></svg>
+        </div>
+        <div>
+          <p>Vacation Rentals</p>
+          <svg viewBox="0 0 24 24" width="24px" height="24px"><path d="M12.001 2L2.097 8.6V22h19.807V8.6L12.001 2zm7.922 18.021H4.077V9.66l7.924-5.28 7.922 5.28v10.361z"></path><path d="M9.036 10.627a2.973 2.973 0 00-2.97 2.968 2.974 2.974 0 002.97 2.971 2.964 2.964 0 002.788-1.98h2.152v1.979h1.98v-1.979h1.982v-1.979h-6.115a2.965 2.965 0 00-2.787-1.98zm0 3.959a.99.99 0 11-.002-1.978.99.99 0 01.002 1.978z"></path></svg>
+        </div>
+        <div>
+          <p>Things to Do</p>
+          <svg x="0" y="0" viewBox="0 0 24 24" width="24px" height="24px"><circle cx="12" cy="8.5" r="1"></circle><circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="15.5" r="1"></circle><path d="M20 6.5V8c-1.5.7-2.5 2.3-2.5 4 0 1.8 1 3.3 2.5 4v1.5H4V16c1.5-.7 2.5-2.3 2.5-4 0-1.8-1-3.3-2.5-4V6.5h16m2-2H2v5c1.4 0 2.5 1.1 2.5 2.5S3.4 14.5 2 14.5v5h20v-5c-1.4 0-2.5-1.1-2.5-2.5s1.1-2.5 2.5-2.5v-5z"></path></svg>
         </div>
         <div>
           <p>More</p>
@@ -200,7 +239,7 @@
           
           <div>
             <h4>Do</h4>
-            <p>Places to see, ways to wander, and signature experiences that define New York City.</p>
+            <p class="text_description">Places to see, ways to wander, and signature experiences that define New York City.</p>
             <a href="#">See all</a>
           </div>
 
@@ -265,7 +304,7 @@
         <nav class="essential-container">
           <div>
             <h4>Stay</h4>
-            <p>A mix of the charming, iconic, and modern.</p>
+            <p class="text_description">A mix of the charming, iconic, and modern.</p>
             <a href="#">See all</a>
           </div>
 
@@ -331,7 +370,7 @@
         <nav class="essential-container">
           <div>
             <h4>Eat</h4>
-            <p>Quintessential New York City restaurants, bars, and beyond.</p>
+            <p class="text_description">Quintessential New York City restaurants, bars, and beyond.</p>
             <a href="#">See all</a>
           </div>
 
@@ -396,16 +435,54 @@
       </section>
 
 
+      <!-- Comments -->
+      <section class="comments">
+        
+        <div class="title">
+          <h4>From the Forums</h4>
+          <a href="#">See all</a>
+        </div>
+        <div class="comments-list">
+
+          <div class="comments-item">
+            <h5 class="comments-content">TKTS too risky with reopening?</h5>
+            <div class="item-bottom">
+              <img src="./assets/img/user0.jpg" class="img" alt="Oxomoco"/>
+              <h5>By <span>RobUSA</span> . 21 replies</h5>
+            </div>
+          </div>
+
+          <div class="comments-item">
+            <h5 class="comments-content">Where can a visitor to NYC get a cheap PCR COVID-19 test?</h5>
+            <div class="item-bottom">
+              <img src="./assets/img/user1.jpg" class="img" alt="Oxomoco"/>
+              <h5>By <span>Uber D</span> . 29 replies</h5>
+            </div>
+          </div>
+
+          <div class="comments-item">
+            <h5 class="comments-content">A Really Good NYC (Cheese)Burger?</h5>
+            <div class="item-bottom">
+              <img src="./assets/img/user3.jpg" class="img" alt="Oxomoco"/>
+              <h5>By <span> ter1413 🇺🇲</span> . 35 replies</h5>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+
       <!-- dig into -->
       <aside>
         <section>
-          <h4>Dig Into New York</h4>
+          <h4 class="aside_h4">Dig Into New York</h4>
           <p class="subtitle">Stories, tips, and guides</p>
           
           <div class="dig-into-container">
             
             <div class="dig-into-cell">
-              <div class="dig-into-image" id="dig-into-image-01"></div>
+              <div class="dig-into-image" id="dig-into-image-01">
+                <svg viewBox="0 0 24 24" class="hearth_dig"><path d="M12.001 20.729s-6.741-5.85-8.485-8.003c-2.055-2.541-2.018-5.837.089-7.836a5.928 5.928 0 014.104-1.618c1.548 0 3.005.575 4.104 1.618l.174.165.162-.155a5.93 5.93 0 014.104-1.618c1.548 0 3.005.574 4.104 1.618 2.158 2.049 2.192 5.273.084 7.841-1.755 2.139-8.44 7.988-8.44 7.988zM7.709 5.271a3.935 3.935 0 00-2.727 1.068c-1.578 1.498-1.06 3.708.088 5.128 1.306 1.613 5.333 5.204 6.925 6.605 1.583-1.404 5.58-4.993 6.899-6.601 1.195-1.455 1.685-3.603.085-5.122-.726-.689-1.694-1.069-2.728-1.069s-2.001.38-2.728 1.069l-1.539 1.462-1.551-1.473a3.925 3.925 0 00-2.724-1.067z"></path></svg>
+              </div>
               <div class="dig-into-link">
                 <p>From <a href="#" class="underline">The Infactuation</a></p>
                 <a href="#" class="dig-into-link-main">Visiting NYC? This List Will Lead You to the World's Best Bagels</a>
@@ -413,7 +490,9 @@
             </div>
 
             <div class="dig-into-cell">
-              <div class="dig-into-image" id="dig-into-image-02"></div>
+              <div class="dig-into-image" id="dig-into-image-02">
+                <svg viewBox="0 0 24 24" class="hearth_dig"><path d="M12.001 20.729s-6.741-5.85-8.485-8.003c-2.055-2.541-2.018-5.837.089-7.836a5.928 5.928 0 014.104-1.618c1.548 0 3.005.575 4.104 1.618l.174.165.162-.155a5.93 5.93 0 014.104-1.618c1.548 0 3.005.574 4.104 1.618 2.158 2.049 2.192 5.273.084 7.841-1.755 2.139-8.44 7.988-8.44 7.988zM7.709 5.271a3.935 3.935 0 00-2.727 1.068c-1.578 1.498-1.06 3.708.088 5.128 1.306 1.613 5.333 5.204 6.925 6.605 1.583-1.404 5.58-4.993 6.899-6.601 1.195-1.455 1.685-3.603.085-5.122-.726-.689-1.694-1.069-2.728-1.069s-2.001.38-2.728 1.069l-1.539 1.462-1.551-1.473a3.925 3.925 0 00-2.724-1.067z"></path></svg>
+              </div>
               <div class="dig-into-link">
                 <p>From <a href="#" class="underline">Tripadvisor</a></p>
                 <a href="#" class="dig-into-link-main">Craving Culture of Every Kind? Head to Corona and Jackson Heights in Queens</a>
@@ -421,7 +500,9 @@
             </div>
 
             <div class="dig-into-cell">
-              <div class="dig-into-image" id="dig-into-image-03"></div>
+              <div class="dig-into-image" id="dig-into-image-03">
+                <svg viewBox="0 0 24 24" class="hearth_dig"><path d="M12.001 20.729s-6.741-5.85-8.485-8.003c-2.055-2.541-2.018-5.837.089-7.836a5.928 5.928 0 014.104-1.618c1.548 0 3.005.575 4.104 1.618l.174.165.162-.155a5.93 5.93 0 014.104-1.618c1.548 0 3.005.574 4.104 1.618 2.158 2.049 2.192 5.273.084 7.841-1.755 2.139-8.44 7.988-8.44 7.988zM7.709 5.271a3.935 3.935 0 00-2.727 1.068c-1.578 1.498-1.06 3.708.088 5.128 1.306 1.613 5.333 5.204 6.925 6.605 1.583-1.404 5.58-4.993 6.899-6.601 1.195-1.455 1.685-3.603.085-5.122-.726-.689-1.694-1.069-2.728-1.069s-2.001.38-2.728 1.069l-1.539 1.462-1.551-1.473a3.925 3.925 0 00-2.724-1.067z"></path></svg>
+              </div>
               <div class="dig-into-link">
                 <p>From <a href="#" class="underline">Tripadvisor</a></p>
                 <a href="#" class="dig-into-link-main">Fall Just Might Be NYC's Most Magical Season. Here's Why.</a>
@@ -496,12 +577,139 @@
 
       </section>
 
+
+      <!-- Letting Your Pride Flag Fly -->
+      <section class="section-spacing">
+        <h4>Letting Your Pride Flag Fly</h4>
+
+        <nav class="great-for">
+
+          <div>
+            <svg viewBox="0 0 24 24" class="hearth"><path d="M12.001 20.729s-6.741-5.85-8.485-8.003c-2.055-2.541-2.018-5.837.089-7.836a5.928 5.928 0 014.104-1.618c1.548 0 3.005.575 4.104 1.618l.174.165.162-.155a5.93 5.93 0 014.104-1.618c1.548 0 3.005.574 4.104 1.618 2.158 2.049 2.192 5.273.084 7.841-1.755 2.139-8.44 7.988-8.44 7.988zM7.709 5.271a3.935 3.935 0 00-2.727 1.068c-1.578 1.498-1.06 3.708.088 5.128 1.306 1.613 5.333 5.204 6.925 6.605 1.583-1.404 5.58-4.993 6.899-6.601 1.195-1.455 1.685-3.603.085-5.122-.726-.689-1.694-1.069-2.728-1.069s-2.001.38-2.728 1.069l-1.539 1.462-1.551-1.473a3.925 3.925 0 00-2.724-1.067z"></path></svg>
+            <img src="./assets/img/flag0.jpg" class="img" alt="Westlight"/>
+            <div>
+              <h5>The Stonewall Inn</h5>
+              <div class="flex">
+                <svg viewBox="0 0 68 12" fill="currentColor" width="68" height="12" class="essential-icon"><path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z" transform="scale(0.5)"></path><path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z" transform="translate(14 0) scale(0.5)"></path><path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z" transform="translate(28 0) scale(0.5)"></path><path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z" transform="translate(42 0) scale(0.5)"></path><path d="M 12 0C5.389 0 0 5.389 0 12c0 6.62 5.389 12 12 12 6.62 0 12-5.379 12-12S18.621 0 12 0zm0 2a9.984 9.984 0 0110 10 9.976 9.976 0 01-10 10z" transform="translate(56 0) scale(0.5)"></path></svg>
+                <p class="essential-reviews-number">172</p>
+              </div>
+              <p class="essential-reviews">Bar & Clubs, Gay Bars</p>
+            </div>
+
+          </div>
+
+          <div>
+            <svg viewBox="0 0 24 24" class="hearth"><path d="M12.001 20.729s-6.741-5.85-8.485-8.003c-2.055-2.541-2.018-5.837.089-7.836a5.928 5.928 0 014.104-1.618c1.548 0 3.005.575 4.104 1.618l.174.165.162-.155a5.93 5.93 0 014.104-1.618c1.548 0 3.005.574 4.104 1.618 2.158 2.049 2.192 5.273.084 7.841-1.755 2.139-8.44 7.988-8.44 7.988zM7.709 5.271a3.935 3.935 0 00-2.727 1.068c-1.578 1.498-1.06 3.708.088 5.128 1.306 1.613 5.333 5.204 6.925 6.605 1.583-1.404 5.58-4.993 6.899-6.601 1.195-1.455 1.685-3.603.085-5.122-.726-.689-1.694-1.069-2.728-1.069s-2.001.38-2.728 1.069l-1.539 1.462-1.551-1.473a3.925 3.925 0 00-2.724-1.067z"></path></svg>
+            <img src="./assets/img/flag1.jpg" class="img" alt="230 FIFTH ROOFTOP BAR NYC"/>
+            <div>
+              <h5>Leslie-Lohman Museum</h5>
+              <div class="flex">
+                <svg viewBox="0 0 68 12" fill="currentColor" width="68" height="12" class="essential-icon"><path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z" transform="scale(0.5)"></path><path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z" transform="translate(14 0) scale(0.5)"></path><path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z" transform="translate(28 0) scale(0.5)"></path><path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z" transform="translate(42 0) scale(0.5)"></path><path d="M 12 0C5.389 0 0 5.389 0 12c0 6.62 5.389 12 12 12 6.62 0 12-5.379 12-12S18.621 0 12 0zm0 2a9.984 9.984 0 0110 10 9.976 9.976 0 01-10 10z" transform="translate(56 0) scale(0.5)"></path></svg>
+                <p class="essential-reviews-number">24</p>
+              </div>
+              <p class="essential-reviews">Art Museum</p>
+            </div>
+          </div>
+
+          <div>
+            <svg viewBox="0 0 24 24" class="hearth"><path d="M12.001 20.729s-6.741-5.85-8.485-8.003c-2.055-2.541-2.018-5.837.089-7.836a5.928 5.928 0 014.104-1.618c1.548 0 3.005.575 4.104 1.618l.174.165.162-.155a5.93 5.93 0 014.104-1.618c1.548 0 3.005.574 4.104 1.618 2.158 2.049 2.192 5.273.084 7.841-1.755 2.139-8.44 7.988-8.44 7.988zM7.709 5.271a3.935 3.935 0 00-2.727 1.068c-1.578 1.498-1.06 3.708.088 5.128 1.306 1.613 5.333 5.204 6.925 6.605 1.583-1.404 5.58-4.993 6.899-6.601 1.195-1.455 1.685-3.603.085-5.122-.726-.689-1.694-1.069-2.728-1.069s-2.001.38-2.728 1.069l-1.539 1.462-1.551-1.473a3.925 3.925 0 00-2.724-1.067z"></path></svg>
+            <img src="./assets/img/flag2.jpg" class="img" alt="Roof Garden Café and Martini"/>
+            <div>
+              <h5>Cubby Hole</h5>
+              <div class="flex">
+                <svg viewBox="0 0 68 12" fill="currentColor" width="68" height="12" class="essential-icon"><path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z" transform="scale(0.5)"></path><path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z" transform="translate(14 0) scale(0.5)"></path><path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z" transform="translate(28 0) scale(0.5)"></path><path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z" transform="translate(42 0) scale(0.5)"></path><path d="M 12 0C5.389 0 0 5.389 0 12c0 6.62 5.389 12 12 12 6.62 0 12-5.379 12-12S18.621 0 12 0zm0 2a9.984 9.984 0 0110 10 9.976 9.976 0 01-10 10z" transform="translate(56 0) scale(0.5)"></path></svg>
+                <p class="essential-reviews-number">49</p>
+              </div>
+              <p class="essential-reviews">Bars & Clubs</p>
+            </div>
+          </div>
+
+          <div>
+            <svg viewBox="0 0 24 24" class="hearth"><path d="M12.001 20.729s-6.741-5.85-8.485-8.003c-2.055-2.541-2.018-5.837.089-7.836a5.928 5.928 0 014.104-1.618c1.548 0 3.005.575 4.104 1.618l.174.165.162-.155a5.93 5.93 0 014.104-1.618c1.548 0 3.005.574 4.104 1.618 2.158 2.049 2.192 5.273.084 7.841-1.755 2.139-8.44 7.988-8.44 7.988zM7.709 5.271a3.935 3.935 0 00-2.727 1.068c-1.578 1.498-1.06 3.708.088 5.128 1.306 1.613 5.333 5.204 6.925 6.605 1.583-1.404 5.58-4.993 6.899-6.601 1.195-1.455 1.685-3.603.085-5.122-.726-.689-1.694-1.069-2.728-1.069s-2.001.38-2.728 1.069l-1.539 1.462-1.551-1.473a3.925 3.925 0 00-2.724-1.067z"></path></svg>
+            <img src="./assets/img/flag3.jpg" class="img" alt="Salon de Nig ROOFTOP"/>
+            <div>
+              <h5>Christopher Park</h5>
+              <div class="flex">
+                <svg viewBox="0 0 68 12" fill="currentColor" width="68" height="12" class="essential-icon"><path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z" transform="scale(0.5)"></path><path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z" transform="translate(14 0) scale(0.5)"></path><path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z" transform="translate(28 0) scale(0.5)"></path><path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z" transform="translate(42 0) scale(0.5)"></path><path d="M 12 0C5.389 0 0 5.389 0 12c0 6.62 5.389 12 12 12 6.62 0 12-5.379 12-12S18.621 0 12 0zm0 2a9.984 9.984 0 0110 10 9.976 9.976 0 01-10 10z" transform="translate(56 0) scale(0.5)"></path></svg>
+                <p class="essential-reviews-number">34</p>
+              </div>
+              <p class="essential-reviews">Park</p>
+            </div>
+          </div>
+        
+        </nav>
+
+      </section>
+
+      <!-- Gallery Hopping Across Manhattan and Brooklyn -->
+      <section class="section-spacing">
+        <h4>Gallery Hopping Across Manhattan and Brooklyn</h4>
+
+        <nav class="great-for">
+
+          <div>
+            <svg viewBox="0 0 24 24" class="hearth"><path d="M12.001 20.729s-6.741-5.85-8.485-8.003c-2.055-2.541-2.018-5.837.089-7.836a5.928 5.928 0 014.104-1.618c1.548 0 3.005.575 4.104 1.618l.174.165.162-.155a5.93 5.93 0 014.104-1.618c1.548 0 3.005.574 4.104 1.618 2.158 2.049 2.192 5.273.084 7.841-1.755 2.139-8.44 7.988-8.44 7.988zM7.709 5.271a3.935 3.935 0 00-2.727 1.068c-1.578 1.498-1.06 3.708.088 5.128 1.306 1.613 5.333 5.204 6.925 6.605 1.583-1.404 5.58-4.993 6.899-6.601 1.195-1.455 1.685-3.603.085-5.122-.726-.689-1.694-1.069-2.728-1.069s-2.001.38-2.728 1.069l-1.539 1.462-1.551-1.473a3.925 3.925 0 00-2.724-1.067z"></path></svg>
+            <img src="./assets/img/expo0.jpg" class="img" alt="Westlight"/>
+            <div>
+              <h5>David Zwirner Gallery</h5>
+              <div class="flex">
+                <svg viewBox="0 0 68 12" fill="currentColor" width="68" height="12" class="essential-icon"><path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z" transform="scale(0.5)"></path><path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z" transform="translate(14 0) scale(0.5)"></path><path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z" transform="translate(28 0) scale(0.5)"></path><path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z" transform="translate(42 0) scale(0.5)"></path><path d="M 12 0C5.389 0 0 5.389 0 12c0 6.62 5.389 12 12 12 6.62 0 12-5.379 12-12S18.621 0 12 0zm0 2a9.984 9.984 0 0110 10 9.976 9.976 0 01-10 10z" transform="translate(56 0) scale(0.5)"></path></svg>
+                <p class="essential-reviews-number">19</p>
+              </div>
+              <p class="essential-reviews">Art Gallery</p>
+            </div>
+
+          </div>
+
+          <div>
+            <svg viewBox="0 0 24 24" class="hearth"><path d="M12.001 20.729s-6.741-5.85-8.485-8.003c-2.055-2.541-2.018-5.837.089-7.836a5.928 5.928 0 014.104-1.618c1.548 0 3.005.575 4.104 1.618l.174.165.162-.155a5.93 5.93 0 014.104-1.618c1.548 0 3.005.574 4.104 1.618 2.158 2.049 2.192 5.273.084 7.841-1.755 2.139-8.44 7.988-8.44 7.988zM7.709 5.271a3.935 3.935 0 00-2.727 1.068c-1.578 1.498-1.06 3.708.088 5.128 1.306 1.613 5.333 5.204 6.925 6.605 1.583-1.404 5.58-4.993 6.899-6.601 1.195-1.455 1.685-3.603.085-5.122-.726-.689-1.694-1.069-2.728-1.069s-2.001.38-2.728 1.069l-1.539 1.462-1.551-1.473a3.925 3.925 0 00-2.724-1.067z"></path></svg>
+            <img src="./assets/img/expo1.jpg" class="img" alt="230 FIFTH ROOFTOP BAR NYC"/>
+            <div>
+              <h5>Dia: Chelsea</h5>
+              <div class="flex">
+                <svg viewBox="0 0 68 12" fill="currentColor" width="68" height="12" class="essential-icon"><path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z" transform="scale(0.5)"></path><path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z" transform="translate(14 0) scale(0.5)"></path><path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z" transform="translate(28 0) scale(0.5)"></path><path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z" transform="translate(42 0) scale(0.5)"></path><path d="M 12 0C5.389 0 0 5.389 0 12c0 6.62 5.389 12 12 12 6.62 0 12-5.379 12-12S18.621 0 12 0zm0 2a9.984 9.984 0 0110 10 9.976 9.976 0 01-10 10z" transform="translate(56 0) scale(0.5)"></path></svg>
+                <p class="essential-reviews-number">2</p>
+              </div>
+              <p class="essential-reviews">Art Museum</p>
+            </div>
+          </div>
+
+          <div>
+            <svg viewBox="0 0 24 24" class="hearth"><path d="M12.001 20.729s-6.741-5.85-8.485-8.003c-2.055-2.541-2.018-5.837.089-7.836a5.928 5.928 0 014.104-1.618c1.548 0 3.005.575 4.104 1.618l.174.165.162-.155a5.93 5.93 0 014.104-1.618c1.548 0 3.005.574 4.104 1.618 2.158 2.049 2.192 5.273.084 7.841-1.755 2.139-8.44 7.988-8.44 7.988zM7.709 5.271a3.935 3.935 0 00-2.727 1.068c-1.578 1.498-1.06 3.708.088 5.128 1.306 1.613 5.333 5.204 6.925 6.605 1.583-1.404 5.58-4.993 6.899-6.601 1.195-1.455 1.685-3.603.085-5.122-.726-.689-1.694-1.069-2.728-1.069s-2.001.38-2.728 1.069l-1.539 1.462-1.551-1.473a3.925 3.925 0 00-2.724-1.067z"></path></svg>
+            <img src="./assets/img/expo2.jpg" class="img" alt="Roof Garden Café and Martini"/>
+            <div>
+              <h5>Gagosian Gallery</h5>
+              <div class="flex">
+                <svg viewBox="0 0 68 12" fill="currentColor" width="68" height="12" class="essential-icon"><path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z" transform="scale(0.5)"></path><path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z" transform="translate(14 0) scale(0.5)"></path><path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z" transform="translate(28 0) scale(0.5)"></path><path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z" transform="translate(42 0) scale(0.5)"></path><path d="M 12 0C5.389 0 0 5.389 0 12c0 6.62 5.389 12 12 12 6.62 0 12-5.379 12-12S18.621 0 12 0zm0 2a9.984 9.984 0 0110 10 9.976 9.976 0 01-10 10z" transform="translate(56 0) scale(0.5)"></path></svg>
+                <p class="essential-reviews-number">32</p>
+              </div>
+              <p class="essential-reviews">Art Gallery</p>
+            </div>
+          </div>
+
+          <div>
+            <svg viewBox="0 0 24 24" class="hearth"><path d="M12.001 20.729s-6.741-5.85-8.485-8.003c-2.055-2.541-2.018-5.837.089-7.836a5.928 5.928 0 014.104-1.618c1.548 0 3.005.575 4.104 1.618l.174.165.162-.155a5.93 5.93 0 014.104-1.618c1.548 0 3.005.574 4.104 1.618 2.158 2.049 2.192 5.273.084 7.841-1.755 2.139-8.44 7.988-8.44 7.988zM7.709 5.271a3.935 3.935 0 00-2.727 1.068c-1.578 1.498-1.06 3.708.088 5.128 1.306 1.613 5.333 5.204 6.925 6.605 1.583-1.404 5.58-4.993 6.899-6.601 1.195-1.455 1.685-3.603.085-5.122-.726-.689-1.694-1.069-2.728-1.069s-2.001.38-2.728 1.069l-1.539 1.462-1.551-1.473a3.925 3.925 0 00-2.724-1.067z"></path></svg>
+            <img src="./assets/img/expo3.jpg" class="img" alt="Salon de Nig ROOFTOP"/>
+            <div>
+              <h5>Pioneer Works</h5>
+              <div class="flex">
+                <svg viewBox="0 0 68 12" fill="currentColor" width="68" height="12" class="essential-icon"><path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z" transform="scale(0.5)"></path><path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z" transform="translate(14 0) scale(0.5)"></path><path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z" transform="translate(28 0) scale(0.5)"></path><path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z" transform="translate(42 0) scale(0.5)"></path><path d="M 12 0C5.389 0 0 5.389 0 12c0 6.62 5.389 12 12 12 6.62 0 12-5.379 12-12S18.621 0 12 0zm0 2a9.984 9.984 0 0110 10 9.976 9.976 0 01-10 10z" transform="translate(56 0) scale(0.5)"></path></svg>
+                <p class="essential-reviews-number">10</p>
+              </div>
+              <p class="essential-reviews">Art Gallery</p>
+            </div>
+          </div>
+        
+        </nav>
+
+      </section>
+
     </main>
 
     <!--    ------------------------------------------- -->
     <!--    ------------------ footer  ---------------- -->
     <footer>
-      <section class="flex">
+      <section class="flex footer-container">
 
         <div>
           <!-- logo + link -->
@@ -560,6 +768,26 @@
 
       </section>
     </footer>
+
+
+  <script src="./assets/bootstrap.js"></script>
+  <script>
+
+    let Stickynavbar = document.querySelector("#sticky-navigation");
+    let navbar = document.querySelector(".main-navigation");
+    let position = navbar.offsetTop + 50;
+
+    window.onscroll = function () {
+      if(window.pageYOffset >= position) {
+        console.log(position)
+        Stickynavbar.classList.add('sticky')
+      } else {
+        Stickynavbar.classList.remove('sticky')
+      }
+    }
+
+
+  </script>
 
   </body>
   

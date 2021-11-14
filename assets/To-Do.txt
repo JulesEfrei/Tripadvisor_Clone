@@ -1,11 +1,11 @@
 // HEADER / NAVBAR //
 
-    - Sticky position on main nav section
-    - Input bar in header
-    - Hover on header content
-    - Hover on main nav content
-    - Cursor
-    - Focus Effect on More button
+    - Sticky position on main nav section V
+    - Input bar in header V
+    - Hover on header content V
+    - Hover on main nav content V
+    - Cursor V
+    - Focus Effect on More button V
 
 // MAIN //
 
@@ -14,7 +14,7 @@
     
     / Carousel Section /
 
-        - Make Carousel (Using Bootstrap)
+        - Make Carousel (Using Bootstrap) X
         - Hover effect on image V
         - Add heart icon V
         - Cursor V
@@ -22,15 +22,16 @@
 
     / Dig section /
 
-        - Hover on image
-        - Add heart on image
+        - Hover on image V
+        - Add heart on image V
 
 // Footer //
 
-    - Option menu
+    - Option menu V
 
 // Global //
 
-    - Font Familly
-    - Add new section (3 sections)
-    - Focus Effects
+    - Font Familly V
+    - Add new section (3 sections) V
+    - Focus Effects V
+    - RESPONSIVE
