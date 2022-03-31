@@ -55,7 +55,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<img src="./assets/img/tripadvisorClone.png" alt="Logo" width="950" height="550" />
+<img src="./assets/img/tripadvisorClone.png" alt="Logo" width="1000" height="550" />
 
 Clone the home page of Tripadvisor with Bootstrap (School Project)
 
